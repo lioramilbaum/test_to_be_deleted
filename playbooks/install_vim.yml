@@ -6,5 +6,5 @@
     tasks:
       - name: ensure vim is at the latest version
         yum:
-          name: verify_vim
+          name: vim
           state: latest
