@@ -1,0 +1,10 @@
+---
+  - hosts: lmilbaum-contra-sample
+    become: yes
+    become_user: root
+
+    tasks:
+      - name: ensure vim is at the latest version
+        yum:
+          name: verify_vim
+          state: latest
